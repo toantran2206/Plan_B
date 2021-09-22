@@ -6,8 +6,9 @@ st.title('This is a tile')
 
 st.header('Diver-conscinousness')
 st.write('Hi there! Welcome to our diver-consciousness app!')
-user_input = st.text_input("Please tell us your name:", user_name)
-st.write('Hi ',user_input)
+user_input = st.text_input("Please tell us your name:")
+if user_input:
+    st.write('Hi ',user_input,'!')
 
 
 values = st.slider(
